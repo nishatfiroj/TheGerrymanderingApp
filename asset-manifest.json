@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/TheGerrymanderingApp.github.io/static/css/main.5f361e03.chunk.css",
-    "main.js": "/TheGerrymanderingApp.github.io/static/js/main.98ace5d8.chunk.js",
-    "main.js.map": "/TheGerrymanderingApp.github.io/static/js/main.98ace5d8.chunk.js.map",
-    "runtime-main.js": "/TheGerrymanderingApp.github.io/static/js/runtime-main.71fa9242.js",
-    "runtime-main.js.map": "/TheGerrymanderingApp.github.io/static/js/runtime-main.71fa9242.js.map",
-    "static/js/2.d084548b.chunk.js": "/TheGerrymanderingApp.github.io/static/js/2.d084548b.chunk.js",
-    "static/js/2.d084548b.chunk.js.map": "/TheGerrymanderingApp.github.io/static/js/2.d084548b.chunk.js.map",
-    "index.html": "/TheGerrymanderingApp.github.io/index.html",
-    "precache-manifest.c998705c9495cabf89b519afae942284.js": "/TheGerrymanderingApp.github.io/precache-manifest.c998705c9495cabf89b519afae942284.js",
-    "service-worker.js": "/TheGerrymanderingApp.github.io/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/TheGerrymanderingApp.github.io/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.d084548b.chunk.js.LICENSE.txt": "/TheGerrymanderingApp.github.io/static/js/2.d084548b.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/TheGerrymanderingApp.github.io/static/media/logo.5d5d9eef.svg"
+    "main.css": "/TheGerrymanderingApp/static/css/main.5f361e03.chunk.css",
+    "main.js": "/TheGerrymanderingApp/static/js/main.669bc70d.chunk.js",
+    "main.js.map": "/TheGerrymanderingApp/static/js/main.669bc70d.chunk.js.map",
+    "runtime-main.js": "/TheGerrymanderingApp/static/js/runtime-main.08c2004a.js",
+    "runtime-main.js.map": "/TheGerrymanderingApp/static/js/runtime-main.08c2004a.js.map",
+    "static/js/2.d084548b.chunk.js": "/TheGerrymanderingApp/static/js/2.d084548b.chunk.js",
+    "static/js/2.d084548b.chunk.js.map": "/TheGerrymanderingApp/static/js/2.d084548b.chunk.js.map",
+    "index.html": "/TheGerrymanderingApp/index.html",
+    "precache-manifest.6d386f1f6ae497092a9063248769f123.js": "/TheGerrymanderingApp/precache-manifest.6d386f1f6ae497092a9063248769f123.js",
+    "service-worker.js": "/TheGerrymanderingApp/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/TheGerrymanderingApp/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.d084548b.chunk.js.LICENSE.txt": "/TheGerrymanderingApp/static/js/2.d084548b.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/TheGerrymanderingApp/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.71fa9242.js",
+    "static/js/runtime-main.08c2004a.js",
     "static/js/2.d084548b.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.98ace5d8.chunk.js"
+    "static/js/main.669bc70d.chunk.js"
   ]
 }
