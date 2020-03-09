@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import NavBar from "./Components/navBar";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import GettingInvolved from "./Routes/gettingInvolved";
+import CaseStudyTemplate from "./Routes/caseStudyTemplate";
+import History from "./Routes/history";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Router>
+          <NavBar />
+          <Route path="/history" component={History} />
+          <Route path="/gettingInvolved" component={GettingInvolved} />
+          {/* <Route path="/blank" component={Blank} /> */}
+          <Route path="/caseStudy1" component={CaseStudyTemplate} />
+          <Route path="/caseStudy2" component={CaseStudyTemplate} />
+          <Route path="/caseStudy3" component={CaseStudyTemplate} />
+        </Router>
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
