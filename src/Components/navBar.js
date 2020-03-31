@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-import {
-  Nav,
-  Navbar,
-  Container,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button
-} from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 export default class NavBar extends Component {
   render() {
@@ -22,7 +14,6 @@ export default class NavBar extends Component {
             <NavDropdown title="Case Studies" id="basic-nav-dropdown">
               <NavDropdown.Item href="/caseStudy1">1</NavDropdown.Item>
               <NavDropdown.Item href="/caseStudy2">2 </NavDropdown.Item>
-              <NavDropdown.Item href="/caseStudy3">3</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/gettingInvolved">Getting Involved</Nav.Link>
           </Nav>
