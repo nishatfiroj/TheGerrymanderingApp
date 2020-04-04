@@ -1,0 +1,9 @@
+maptype,districts,county_splits,efficiency_gap,efficiency_gap_extra_seats,compactness_rank,competitive_districts,majority_nonwhite_districts
+Compact,14,11,13.30%,R+2,1,2,4
+Competitive,14,22,9.12%,R+1,5,7,4
+Dem,14,29,-13.79%,D+2,8,0,6
+GOP,14,23,22.22%,R+3,3,0,3
+MajMin,14,23,-0.12%,D+0,7,2,6
+Proportional,14,23,0.75%,R+0,4,1,5
+algorithmic-compact,14,92,17.12%,R+2,2,2,3
+current,14,22,14.50%,R+2,6,0,4
