@@ -6,9 +6,9 @@ import GettingInvolved from "./Routes/gettingInvolved";
 import CaseStudyOne from "./Routes/caseStudyOne";
 import CaseStudyTwo from "./Routes/caseStudyTwo";
 import CaseStudyThree from "./Routes/caseStudyThree";
+import Home from "./Routes/home"
 
 import History from "./Routes/history";
-import Toggle from "./Components/Toggle";
 
 
 class App extends Component {
@@ -18,6 +18,7 @@ class App extends Component {
         <React.Fragment>
           <Router>
             <NavBar />
+            <Route path="/home" component={Home} />
             <Route path="/history" component={History} />
             <Route path="/gettingInvolved" component={GettingInvolved} />
             <Route path="/caseStudy1" component={CaseStudyOne} />
@@ -25,7 +26,6 @@ class App extends Component {
             <Route path="/caseStudy3" component={CaseStudyThree} />
           </Router>
 
-          <Toggle/>
         </React.Fragment>
     );
   }
