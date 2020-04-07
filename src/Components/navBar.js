@@ -14,6 +14,7 @@ export default class NavBar extends Component {
             <NavDropdown title="Case Studies" id="basic-nav-dropdown">
               <NavDropdown.Item href="/caseStudy1">1</NavDropdown.Item>
               <NavDropdown.Item href="/caseStudy2">2 </NavDropdown.Item>
+              <NavDropdown.Item href="/caseStudy3">3 </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/gettingInvolved">Getting Involved</Nav.Link>
           </Nav>

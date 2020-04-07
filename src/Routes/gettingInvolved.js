@@ -9,9 +9,11 @@ export default class GettingInvolved extends Component {
             <h1>Getting Involved</h1>
             <p>
               One of the best ways to get involved is to contact the Georgia
-              Governor. ADD ANOTHER SENTENCE ABOUT WHY. Another thing you can do
-              is Rally support through Atlanta’s local government by contacting
-              the majoy's office or constituent services.
+              Governor. Another thing you can do is Rally support through
+              Atlanta’s local government by contacting the majoy's office or
+              constituent services. Gerrymandering happens following the{" "}
+              <a href={" www.2020census.gov/"}>census</a>, so make sure to
+              participate if you haven’t already.
             </p>
             <Button href="https://gov.georgia.gov/contact-us" className="mb-3">
               Georgia Governor's Link
