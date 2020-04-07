@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import "./App.css";
 import NavBar from "./Components/navBar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -7,11 +6,13 @@ import GettingInvolved from "./Routes/gettingInvolved";
 import CaseStudyOne from "./Routes/caseStudyOne";
 import CaseStudyTwo from "./Routes/caseStudyTwo";
 import History from "./Routes/history";
+import Toggle from "./Components/Toggle";
+
 
 class App extends Component {
   render() {
     return (
-      <div>
+
         <React.Fragment>
           <Router>
             <NavBar />
@@ -20,10 +21,9 @@ class App extends Component {
             <Route path="/caseStudy1" component={CaseStudyOne} />
             <Route path="/caseStudy2" component={CaseStudyTwo} />
           </Router>
+
+          <Toggle/>
         </React.Fragment>
-
-
-      </div>
     );
   }
 }
