@@ -6,10 +6,12 @@ import GettingInvolved from "./Routes/gettingInvolved";
 import CaseStudyOne from "./Routes/caseStudyOne";
 import CaseStudyTwo from "./Routes/caseStudyTwo";
 import CaseStudyThree from "./Routes/caseStudyThree";
-
+import Home from "./Components/Toggle";
 import History from "./Routes/history";
 
+
 class App extends Component {
+
   render() {
     return (
       <React.Fragment>
@@ -22,6 +24,10 @@ class App extends Component {
           <Route path="/caseStudy2" component={CaseStudyTwo} />
           <Route path="/caseStudy3" component={CaseStudyThree} />
         </Router>
+
+        <test></test>
+
+
       </React.Fragment>
     );
   }
