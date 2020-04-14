@@ -6,7 +6,7 @@ import {
   Jumbotron,
   OverlayTrigger,
   Tooltip,
-  Button
+  Button,
 } from "react-bootstrap";
 
 export default class History extends Component {
@@ -26,22 +26,28 @@ export default class History extends Component {
               <Accordion.Collapse eventKey="0">
                 <Card.Body>
                   Gerrymandering is the practice of drawing political boundaries
-                  of
-                  <OverlayTrigger
-                    key="test"
-                    placement="test"
-                    overlay={
-                      <Tooltip id={`tooltip-$"aa"`}>
-                        the subdivision of a state that is designed to provide
-                        that district with representation in the state’s
-                        legislative body or Congress
-                      </Tooltip>
-                    }
-                  >
-                    <Button variant="success" className="ml-1">
-                      electoral districts
-                    </Button>
-                  </OverlayTrigger>
+                  of{" "}
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              the subdivision of a state that is designed to
+                              provide that district with representation in the
+                              state’s legislative body or Congress
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">
+                            electoral districts
+                          </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
                   in favor of political interests that may or may not actually
                   align with that of the population.
                 </Card.Body>
@@ -65,36 +71,27 @@ export default class History extends Component {
               <Accordion.Collapse eventKey="2">
                 <Card.Body>
                   The word gerrymandering has two parts. The first, “gerry,”
-                  refers to Elbridge Gerry, who set the
-                  <OverlayTrigger
-                    key="test"
-                    placement="test"
-                    overlay={
-                      <Tooltip id={`tooltip-$"aa"`}>
-                        the process of drawing district boundaries
-                      </Tooltip>
-                    }
-                  >
-                    <Button variant="success" className="ml-1">
-                      redistricting
-                    </Button>
-                  </OverlayTrigger>
+                  refers to Elbridge Gerry, who set the{" "}
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              the process of drawing district boundaries
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">redistricting</Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
                   maps of 1812. The second, “mandering,” refers to one district
                   that Mr. Gerry drew, which bore a striking resemblance to a
-                  <OverlayTrigger
-                    key="test"
-                    placement="test"
-                    overlay={
-                      <Tooltip id={`tooltip-$"aa"`}>
-                        amphibians that look like long, slimy lizards
-                      </Tooltip>
-                    }
-                  >
-                    <Button variant="success" className="ml-1">
-                      salamander
-                    </Button>
-                  </OverlayTrigger>
-                  .
+                  salamander.
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
@@ -105,7 +102,27 @@ export default class History extends Component {
               <Accordion.Collapse eventKey="3">
                 <Card.Body>
                   Gerrymandering happens when redistricting happens, which is
-                  every ten years, following that year’s census.
+                  every ten years, following that year’s
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              an official survey of a population that records
+                              details of individuals such as age, race,
+                              socio-economic status, etc.
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">census</Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  .
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
@@ -116,9 +133,91 @@ export default class History extends Component {
               <Accordion.Collapse eventKey="4">
                 <Card.Body>
                   It affects the elections of the state’s members of the House
-                  of Representatives, as well as any state legislative bodies.
-                  It also contributes to environmental racism, gridlock in
-                  Congress, and a decrease in competitive elections.
+                  of Representatives, as well as any
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              usually referred to as the “Legislature” or
+                              “General Assembly,” this is more or less the
+                              state-wide equivalent of Congress
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">
+                            state legislative bodies
+                          </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  . It also contributes to
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              this term is used to describe environmental
+                              injustice that occurs in practice and in policy
+                              within a racialized context
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">
+                            environmental racism
+                          </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  ,
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              a situation within a legislative body where there
+                              is difficulty passing legislation
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">gridlock </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  in Congress, and a decrease in
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              elections where there is a ‘close race,’ meaning
+                              the majority is very slight
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">
+                            competitive elections
+                          </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  .
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
@@ -157,14 +256,73 @@ export default class History extends Component {
               <Accordion.Collapse eventKey="7">
                 <Card.Body>
                   The US court system has actually deemed extreme cases of
-                  gerrymandering as unconstitutional. However, they have found
-                  it difficult to develop a standard of unconstitutionality to
-                  judge cases of gerrymandering by. Overall, they have found
-                  that negative racial gerrymandering violates constitutional
-                  rights, but have passed the decision about partisan and
-                  bipartisan gerrymandering to the states and Congress. So, this
-                  has led the states and Congress to attempt to develop remedies
-                  to partisan gerrymandering, such as redistricting commissions.
+                  gerrymandering as
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              not in accordance with the U.S. Constitution
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">unconstitutional </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  . However, they have found it difficult to develop a standard
+                  of unconstitutionality to judge cases of gerrymandering by.
+                  Overall, they have found that
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              process in which district lines are drawn to
+                              prevent racial minorities from electing their
+                              preferred candidates
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">
+                            negative racial gerrymandering
+                          </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  violates constitutional rights, but have passed the decision
+                  about partisan and bipartisan gerrymandering to the states and
+                  Congress. So, this has led the states and Congress to attempt
+                  to develop remedies to partisan gerrymandering, such as
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              a body other than the government that is tasked
+                              with drawing district lines
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">
+                            redistricting commissions
+                          </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  .
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
@@ -175,8 +333,29 @@ export default class History extends Component {
               <Accordion.Collapse eventKey="8">
                 <Card.Body>
                   Gerrymandering can be used to connect minority groups that may
-                  be geographically separated. This is called affirmative racial
-                  gerrymandering.
+                  be geographically separated. This is called{" "}
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              process in which district lines are drawn so that
+                              racial minorities have a better chance of electing
+                              their preferred candidates
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">
+                            affirmative racial gerrymandering
+                          </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  .
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
@@ -187,9 +366,50 @@ export default class History extends Component {
               <Accordion.Collapse eventKey="9">
                 <Card.Body>
                   There are several proposed methods for remedying
-                  gerrymandering. They are using neutral redistricting criteria,
-                  utilizing redistricting commissions, and making alternative
-                  voting systems.
+                  gerrymandering. They are using
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              a set of rules that govern how district lines must
+                              be drawn, and these rules do not depend on who is
+                              currently in office (and thus may be drawing the
+                              lines)
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">
+                            neutral redistricting criteria
+                          </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  , utilizing redistricting commissions, and making
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              voting systems that do not rely on redistricting
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">
+                            alternative voting systems
+                          </Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  .
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
@@ -200,7 +420,25 @@ export default class History extends Component {
               <Accordion.Collapse eventKey="9">
                 <Card.Body>
                   Gerrymandering is important because it can make districts more
-                  fair toward constituents, or less fair toward constituents.
+                  fair toward
+                  <>
+                    {["top"].map((placement) => (
+                      <>
+                        <OverlayTrigger
+                          key={placement}
+                          placement={placement}
+                          overlay={
+                            <Tooltip id={`tooltip-${placement}`}>
+                              the people who live within a district
+                            </Tooltip>
+                          }
+                        >
+                          <Button variant="secondary">constituents</Button>
+                        </OverlayTrigger>{" "}
+                      </>
+                    ))}
+                  </>
+                  , or less fair toward constituents.
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
