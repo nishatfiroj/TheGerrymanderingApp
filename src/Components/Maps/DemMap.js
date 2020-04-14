@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ImageMapper from 'react-image-mapper';
-import URL from "../../Assets/Maps/dem.png";
+import URL from "../../Assets/maps/dem.png";
 import '../mapstyle.css'
 
 export default class DemMap extends Component {

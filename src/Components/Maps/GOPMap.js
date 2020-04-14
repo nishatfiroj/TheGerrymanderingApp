@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ImageMapper from 'react-image-mapper';
-import URL from "../../Assets/Maps/gop.png";
+import URL from "../../Assets/maps/gop.png";
 import '../mapstyle.css'
 
 export default class GOPMap extends Component {
