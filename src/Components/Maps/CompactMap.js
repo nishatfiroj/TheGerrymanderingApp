@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ImageMapper from "react-image-mapper";
-import URL from "../../Assets/maps/compact.png";
+import URL from "../../Assets/Maps/compact.png";
 
 export default class CompactAlgoMap extends Component {
   clicked(name) {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ImageMapper from 'react-image-mapper';
-import URL from "../../Assets/maps/partisan.png";
+import URL from "../../Assets/Maps/partisan.png";
 
 const MAP = {
   name: 'my-map',

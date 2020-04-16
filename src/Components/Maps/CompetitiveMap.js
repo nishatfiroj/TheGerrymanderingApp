@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ImageMapper from 'react-image-mapper';
-import URL from "../../Assets/maps/competitive.png";
+import URL from "../../Assets/Maps/competitive.png";
 
 export default class CompetitiveMap extends Component {
   clicked(name) { 
