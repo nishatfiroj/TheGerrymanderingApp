@@ -12,18 +12,25 @@ import {
 export default class History extends Component {
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: "#8b9dc3" }}>
         <Container>
-          <Jumbotron>
+          <Jumbotron style={{ backgroundColor: "#b3cde0" }}>
             <h1>History of Gerrymandering</h1>
             <p>Learn the history of Gerrymandering</p>
           </Jumbotron>
           <Accordion defaultActiveKey="0">
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="0">
+              <Accordion.Toggle
+                as={Card.Header}
+                eventKey="0"
+                style={{ backgroundColor: "#b3cde0" }}
+              >
                 What is gerrymandering?
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="0">
+              <Accordion.Collapse
+                eventKey="0"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   Gerrymandering is the practice of drawing political boundaries
                   of{" "}
@@ -41,7 +48,10 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
                             electoral districts
                           </Button>
                         </OverlayTrigger>{" "}
@@ -54,10 +64,17 @@ export default class History extends Component {
               </Accordion.Collapse>
             </Card>
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="1">
+              <Accordion.Toggle
+                as={Card.Header}
+                style={{ backgroundColor: "#b3cde0" }}
+                eventKey="1"
+              >
                 When did gerrymandering start?
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="1">
+              <Accordion.Collapse
+                eventKey="1"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   Gerrymandering started in 1788, but it was not given a name
                   until 1812.
@@ -65,10 +82,17 @@ export default class History extends Component {
               </Accordion.Collapse>
             </Card>
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="2">
+              <Accordion.Toggle
+                as={Card.Header}
+                style={{ backgroundColor: "#b3cde0" }}
+                eventKey="2"
+              >
                 Why is it called gerrymandering?
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="2">
+              <Accordion.Collapse
+                eventKey="2"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   The word gerrymandering has two parts. The first, “gerry,”
                   refers to Elbridge Gerry, who set the{" "}
@@ -84,7 +108,12 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">redistricting</Button>
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
+                            redistricting
+                          </Button>
                         </OverlayTrigger>{" "}
                       </>
                     ))}
@@ -96,10 +125,17 @@ export default class History extends Component {
               </Accordion.Collapse>
             </Card>
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="3">
+              <Accordion.Toggle
+                as={Card.Header}
+                style={{ backgroundColor: "#b3cde0" }}
+                eventKey="3"
+              >
                 When does gerrymandering happen?
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="3">
+              <Accordion.Collapse
+                eventKey="3"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   Gerrymandering happens when redistricting happens, which is
                   every ten years, following that year’s
@@ -117,7 +153,12 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">census</Button>
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
+                            census
+                          </Button>
                         </OverlayTrigger>{" "}
                       </>
                     ))}
@@ -127,10 +168,17 @@ export default class History extends Component {
               </Accordion.Collapse>
             </Card>
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="4">
+              <Accordion.Toggle
+                as={Card.Header}
+                style={{ backgroundColor: "#b3cde0" }}
+                eventKey="4"
+              >
                 What does gerrymandering affect?
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="4">
+              <Accordion.Collapse
+                eventKey="4"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   It affects the elections of the state’s members of the House
                   of Representatives, as well as any
@@ -148,7 +196,10 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
                             state legislative bodies
                           </Button>
                         </OverlayTrigger>{" "}
@@ -170,7 +221,10 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
                             environmental racism
                           </Button>
                         </OverlayTrigger>{" "}
@@ -191,7 +245,12 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">gridlock </Button>
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
+                            gridlock{" "}
+                          </Button>
                         </OverlayTrigger>{" "}
                       </>
                     ))}
@@ -206,11 +265,14 @@ export default class History extends Component {
                           overlay={
                             <Tooltip id={`tooltip-${placement}`}>
                               elections where there is a ‘close race,’ meaning
-                              the majority is very slight
+                              the majority is very sblack
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
                             competitive elections
                           </Button>
                         </OverlayTrigger>{" "}
@@ -222,10 +284,17 @@ export default class History extends Component {
               </Accordion.Collapse>
             </Card>
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="5">
+              <Accordion.Toggle
+                as={Card.Header}
+                style={{ backgroundColor: "#b3cde0" }}
+                eventKey="5"
+              >
                 Who does the gerrymandering?
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="5">
+              <Accordion.Collapse
+                eventKey="5"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   The state’s legislative bodies and governor are in the
                   position to gerrymander districts in favor of their political
@@ -234,10 +303,17 @@ export default class History extends Component {
               </Accordion.Collapse>
             </Card>
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="6">
+              <Accordion.Toggle
+                as={Card.Header}
+                style={{ backgroundColor: "#b3cde0" }}
+                eventKey="6"
+              >
                 Are there different types of gerrymandering?
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="6">
+              <Accordion.Collapse
+                eventKey="6"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   Yes! There is partisan and bipartisan gerrymandering and
                   racial gerrymandering. Partisan gerrymandering is where the
@@ -250,10 +326,17 @@ export default class History extends Component {
               </Accordion.Collapse>
             </Card>
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="7">
+              <Accordion.Toggle
+                as={Card.Header}
+                style={{ backgroundColor: "#b3cde0" }}
+                eventKey="7"
+              >
                 If gerrymandering is so bad, why hasn't it stopped?
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="7">
+              <Accordion.Collapse
+                eventKey="7"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   The US court system has actually deemed extreme cases of
                   gerrymandering as
@@ -269,7 +352,12 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">unconstitutional </Button>
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
+                            unconstitutional{" "}
+                          </Button>
                         </OverlayTrigger>{" "}
                       </>
                     ))}
@@ -291,7 +379,10 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
                             negative racial gerrymandering
                           </Button>
                         </OverlayTrigger>{" "}
@@ -315,7 +406,10 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
                             redistricting commissions
                           </Button>
                         </OverlayTrigger>{" "}
@@ -327,10 +421,17 @@ export default class History extends Component {
               </Accordion.Collapse>
             </Card>
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="8">
+              <Accordion.Toggle
+                as={Card.Header}
+                style={{ backgroundColor: "#b3cde0" }}
+                eventKey="8"
+              >
                 Can gerrymandering ever be good?{" "}
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="8">
+              <Accordion.Collapse
+                eventKey="8"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   Gerrymandering can be used to connect minority groups that may
                   be geographically separated. This is called{" "}
@@ -348,7 +449,10 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
                             affirmative racial gerrymandering
                           </Button>
                         </OverlayTrigger>{" "}
@@ -360,10 +464,17 @@ export default class History extends Component {
               </Accordion.Collapse>
             </Card>
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="9">
+              <Accordion.Toggle
+                as={Card.Header}
+                style={{ backgroundColor: "#b3cde0" }}
+                eventKey="9"
+              >
                 How can we fix gerrymandering?
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="9">
+              <Accordion.Collapse
+                eventKey="9"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   There are several proposed methods for remedying
                   gerrymandering. They are using
@@ -382,7 +493,10 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
                             neutral redistricting criteria
                           </Button>
                         </OverlayTrigger>{" "}
@@ -402,7 +516,10 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
                             alternative voting systems
                           </Button>
                         </OverlayTrigger>{" "}
@@ -414,10 +531,17 @@ export default class History extends Component {
               </Accordion.Collapse>
             </Card>
             <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="9">
+              <Accordion.Toggle
+                as={Card.Header}
+                style={{ backgroundColor: "#b3cde0" }}
+                eventKey="9"
+              >
                 Why is gerrymandering important?
               </Accordion.Toggle>
-              <Accordion.Collapse eventKey="9">
+              <Accordion.Collapse
+                eventKey="9"
+                style={{ backgroundColor: "#6497b1" }}
+              >
                 <Card.Body>
                   Gerrymandering is important because it can make districts more
                   fair toward
@@ -433,7 +557,12 @@ export default class History extends Component {
                             </Tooltip>
                           }
                         >
-                          <Button variant="secondary">constituents</Button>
+                          <Button
+                            style={{ backgroundColor: "#b3cde0" }}
+                            variant="outline-black"
+                          >
+                            constituents
+                          </Button>
                         </OverlayTrigger>{" "}
                       </>
                     ))}
