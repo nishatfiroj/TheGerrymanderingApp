@@ -4,8 +4,8 @@ import { Container, Jumbotron } from "react-bootstrap";
 export default class CaseStudyThree extends Component {
   render() {
     return (
-      <div style={{ backgroundColor: "#8b9dc3" }}>
-        <Container>
+      <div style={{ backgroundColor: "#e1e8f7" }}>
+        <Container style={{fontFamily: 'Roboto Slab'}}>
           <Jumbotron style={{ backgroundColor: "#b3cde0" }}>
             <h1>"Fair" Gerrymandering</h1>
             <p>

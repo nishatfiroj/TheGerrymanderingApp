@@ -6,8 +6,8 @@ import second from "../Assets/caseStudies/caseStudy2.2.png";
 export default class CaseStudyTwo extends Component {
   render() {
     return (
-      <div style={{ backgroundColor: "#8b9dc3" }}>
-        <Container>
+      <div style={{ backgroundColor: "#e1e8f7" }}>
+        <Container style={{fontFamily: 'Roboto Slab'}}>
           <Jumbotron style={{ backgroundColor: "#b3cde0" }}>
             <h1>Partisan Gerrymandering</h1>
             <p>Redistricting that favors one particular political party</p>

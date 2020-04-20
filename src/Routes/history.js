@@ -12,8 +12,8 @@ import {
 export default class History extends Component {
   render() {
     return (
-      <div style={{ backgroundColor: "#8b9dc3" }}>
-        <Container>
+      <div style={{ backgroundColor: "#e1e8f7" }}>
+        <Container style={{fontFamily: 'Roboto Slab'}}>
           <Jumbotron style={{ backgroundColor: "#b3cde0" }}>
             <h1>History of Gerrymandering</h1>
             <p>Learn the history of Gerrymandering</p>
@@ -29,7 +29,7 @@ export default class History extends Component {
               </Accordion.Toggle>
               <Accordion.Collapse
                 eventKey="0"
-                style={{ backgroundColor: "#6497b1" }}
+                style={{ backgroundColor: "#e1e8f7" }}
               >
                 <Card.Body>
                   Gerrymandering is the practice of drawing political boundaries

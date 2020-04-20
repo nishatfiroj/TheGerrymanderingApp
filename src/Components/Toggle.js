@@ -132,10 +132,13 @@ export default class Toggle extends Component {
   render() {
     return (
       <React.Fragment>
-        <Container className="pad">
-          Click the buttons to toggle the map. <br />
+        <Container className="pad" style={{fontFamily: 'Roboto Slab'}}>
+          Click the buttons to toggle the maps. Navigate over each map and 
+          click where you live to see how district lines affect who 
+          represents you.
+          <br />
         </Container>
-        <Container>
+        <Container style={{fontFamily: 'Roboto Slab'}}>
           <Row className="center">
             <Button
               className="buttonPad"
@@ -165,6 +168,8 @@ export default class Toggle extends Component {
             >
               Current Map
             </Button>
+          </Row>
+          <Row className="secondRow">
             <Button
               className="buttonPad"
               variant="outline-dark"
@@ -194,130 +199,175 @@ export default class Toggle extends Component {
               Partisan Map
             </Button>
           </Row>
+        </Container>
+        <Container style={{fontFamily: 'Roboto'}}>
           <Row>
-            <Col>
-              {this.state.showCompactAlgoMap && (
-                <div>
-                  <p>
-                    These congressional districts are drawn by an algorithm to
-                    be compact. This map minimizes the average distance between
-                    each citizen and their district's geographic center. The
-                    algorithm doesn’t care about party or race (meaning this map
-                    could violate the Voting Rights Act) and ignores city and
-                    county boundaries.{" "}
-                  </p>
-                  <CompactAlgoMap />
-                </div>
-              )}
-            </Col>
-            <Col>
-              {this.state.showCompactMap && (
-                <div>
-                  <p>
-                    This map simulates the approach that a nonpartisan
-                    commission might take if tasked with drawing districts with
-                    compact shapes — without regard to party or race (meaning
-                    that this map could violate the Voting Rights Act). It seeks
-                    to use counties as district building blocks and splits them
-                    only as many times as necessary to create equally populous
-                    districts. Where possible, entire districts are nested
-                    within counties.
-                  </p>
-                  <CompactMap />
-                </div>
-              )}
-            </Col>
-            <Col>
-              {this.state.showCompetitiveMap && (
-                <div>
-                  <p>
-                    This map seeks to encourage more competitive elections by
-                    maximizing the number of districts where both parties have
-                    at least a 1-in-6 chance of winning — no matter what shape
-                    those districts require. The map also preserves existing
-                    majority-minority districts. Where highly competitive
-                    districts aren’t possible, the map tries to make them as
-                    competitive as possible.
-                  </p>
-                  <CompetitiveMap />
-                </div>
-              )}
-            </Col>
-            <Col>
-              {this.state.showCurrentMap && (
-                <div>
-                  <p>
-                    These are the current congressional district boundaries,
-                    shaded by how likely each is to be represented by a party
-                    over the long term. This is not a forecast of the 2018
-                    midterm elections.
-                  </p>
-                  <CurrentMap />
-                </div>
-              )}
-            </Col>
-            <Col>
-              {this.state.showDemMap && (
-                <div>
-                  <p>
-                    This map is drawn to maximize the number of districts that
-                    usually vote Democratic — seats where a Democrat has greater
-                    than a 5-in-6 chance of winning the election.
-                  </p>
-                  <DemMap />
-                </div>
-              )}
-            </Col>
-            <Col>
-              {this.state.showGOPMap && (
-                <div>
-                  <p>
-                    This map is drawn to maximize the number of districts that
-                    usually vote Republican — seats where a Republican has
-                    greater than a 5-in-6 chance of winning the election.
-                  </p>
-                  <GOPMap />
-                </div>
-              )}
-            </Col>
-            <Col>
-              {this.state.showMajMinMap && (
-                <div>
-                  <p>
-                    This map is drawn to maximize the number of
-                    “majority-minority districts” — districts where members of a
-                    single minority group make up a majority of the voting-age
-                    population. Where additional majority-minority districts are
-                    not possible, the map settles for “coalition” districts, in
-                    which no racial group, including non-Hispanic white voters,
-                    makes up a majority of the population. If it’s not possible
-                    to create any districts where white voters are a minority,
-                    the map tries to make districts with the highest possible
-                    shares of nonwhite voters.
-                  </p>
-                  <MajMinMap />
-                </div>
-              )}
-            </Col>
-            <Col>
-              {this.state.showPartisanMap && (
-                <div>
-                  <p>
-                    This map is drawn with the goal of making the partisan
-                    breakdown of a state’s representatives match the political
-                    makeup of the state’s voters. For example, if a state has 10
-                    districts and Republicans won an average of 70 percent of
-                    its major-party votes in the last two presidential
-                    elections, seven districts are drawn to favor Republicans
-                    and three are drawn to favor Democrats. There are a few
-                    states in which a proportionally partisan map can’t be drawn
-                    — in those states, we made the map as close to proportional
-                    as possible.
-                  </p>
-                  <PartisanMap />
-                </div>
-              )}
-            </Col>
+            {this.state.showCompactAlgoMap && (
+              <div>
+                <Row>
+                  <Col>
+                    <CompactAlgoMap />
+                  </Col>
+                  <Col>
+                    <h3 style={{fontFamily: 'Roboto Slab'}}>Compact Algorithm Map</h3>
+                    <p>
+                      An algorithm draws these congressional districts to be 
+                      compact. This map minimizes the mean distance between 
+                      each resident and the geographic center of their district. 
+                      The algorithm doesn't care about party or race (meaning 
+                      this map could violate the Voting Rights Act) and it 
+                      ignores the borders of cities and counties.{" "}
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            )}
+            {this.state.showCompactMap && (
+              <div>
+                <Row>
+                  <Col>
+                    <CompactMap />
+                  </Col>
+                  <Col>
+                    <h3 style={{fontFamily: 'Roboto Slab'}}>Compact Map</h3>
+                    <p>
+                      This map simulates the approach a non-partisan commission 
+                      could take when it is charged with drawing compact-shaped 
+                      districts — irrespective of party or race (meaning this 
+                      map might violate the Voting Rights Act). It aims to use 
+                      counties as district building blocks, and divides them as 
+                      many times as possible to create districts that are 
+                      similarly populated. Wherever feasible, counties nest 
+                      whole districts.{" "}
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            )}
+            {this.state.showCompetitiveMap && (
+              <div>
+                <Row>
+                  <Col>
+                    <CompetitiveMap />
+                  </Col>
+                  <Col>
+                    <h3 style={{fontFamily: 'Roboto Slab'}}>Competitive Map</h3>
+                    <p>
+                      This map aims to promote more competitive elections by 
+                      increasing the number of districts where both parties have 
+                      at least one in six chances of winning — no matter what 
+                      form those districts need. The map also maintains current 
+                      districts with majority minority groups. The map seeks to 
+                      make them as competitive as possible where highly 
+                      competitive districts are not feasible.{" "}
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            )}
+            {this.state.showCurrentMap && (
+              <div>
+                <Row>
+                  <Col>
+                    <CurrentMap />
+                  </Col>
+                  <Col>
+                    <h3 style={{fontFamily: 'Roboto Slab'}}>Current Map</h3>
+                    <p>
+                      These are the actual boundaries of the congressional 
+                      district, shaded by how likely a group is to represent 
+                      it in the long run. It is not a general election 
+                      prediction for 2018.{" "}
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            )}
+            {this.state.showDemMap && (
+              <div>
+                <Row>
+                  <Col>
+                    <DemMap />
+                  </Col>
+                  <Col>
+                    <h3 style={{fontFamily: 'Roboto Slab'}}>Democrat Favoring Map</h3>
+                    <p>
+                      The map is designed to increase the number of districts 
+                      that typically vote Democratic — seats where a Democrat 
+                      has a chance of winning the election greater than 5 in 6.
+                      {" "}
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            )}
+            {this.state.showGOPMap && (
+              <div>
+                <Row>
+                  <Col>
+                    <GOPMap />
+                  </Col>
+                  <Col>
+                    <h3 style={{fontFamily: 'Roboto Slab'}}>GOP Favoring Map</h3>
+                    <p>
+                      This map is designed to increase the number of districts 
+                      that typically vote Republican — seats where a Republican 
+                      has a chance of winning the election in excess of 5 in 6.
+                    {" "}
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            )}
+            {this.state.showMajMinMap && (
+              <div>
+                <Row>
+                  <Col>
+                    <MajMinMap />
+                  </Col>
+                  <Col>
+                    <h3 style={{fontFamily: 'Roboto Slab'}}>Majority vs Minority Map</h3>
+                    <p>
+                      This map is designed to increase the number of 
+                      "majority-minority districts "— districts where a majority 
+                      of the voting-age population is made up of representatives 
+                      of a single minority. Where additional districts of the 
+                      majority-minority are not necessary, the map settles for 
+                      districts of the "coalition," in which no ethnic group, 
+                      including non-Hispanic white voters, constitutes a 
+                      majority population. If no districts can be formed where 
+                      white voters are a minority, the map seeks to make 
+                      districts with the largest possible shares of non-white 
+                      voters.{" "}
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            )}
+            {this.state.showPartisanMap && (
+              <div>
+                <Row>
+                  <Col>
+                    <PartisanMap />
+                  </Col>
+                  <Col>
+                    <h3 style={{fontFamily: 'Roboto Slab'}}>Partisan Map</h3>
+                    <p>
+                      This map is drawn with the intention of matching the 
+                      political composition of the state's electorate with the 
+                      party breakdown of members in a state. For example, if a 
+                      state has 10 districts and Republicans in the last two 
+                      presidential elections won an average of 70 percent of 
+                      their major-party votes, seven districts are drawn to 
+                      favor Republicans and three are drawn to favor Democrats. 
+                      There are a few states where a proportionally 
+                      representative map can not be drawn-in those states, we 
+                      made the map as similar as possible to proportional.{" "}
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            )}
           </Row>
         </Container>
       </React.Fragment>

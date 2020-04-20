@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ImageMapper from 'react-image-mapper';
 import URL from "../../Assets/Maps/current.png";
-import '../mapstyle.css'
 
 export default class CurrentMap extends Component {
   clicked(name) { 

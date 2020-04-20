@@ -8,6 +8,7 @@ import CaseStudyTwo from "./Routes/caseStudyTwo";
 import CaseStudyThree from "./Routes/caseStudyThree";
 import Home from "./Components/Toggle";
 import History from "./Routes/history";
+import { Container } from "react-bootstrap";
 
 
 class App extends Component {
@@ -15,18 +16,17 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Router>
-          <NavBar />
-          <Route path="/home" component={Home} />
-          <Route path="/history" component={History} />
-          <Route path="/gettingInvolved" component={GettingInvolved} />
-          <Route path="/caseStudy1" component={CaseStudyOne} />
-          <Route path="/caseStudy2" component={CaseStudyTwo} />
-          <Route path="/caseStudy3" component={CaseStudyThree} />
-        </Router>
-
-        <test></test>
-
+        <Container fluid style={{fontFamily: 'Roboto Slab'}}>
+          <Router>
+            <NavBar />
+            <Route path="/home" component={Home} />
+            <Route path="/history" component={History} />
+            <Route path="/gettingInvolved" component={GettingInvolved} />
+            <Route path="/caseStudy1" component={CaseStudyOne} />
+            <Route path="/caseStudy2" component={CaseStudyTwo} />
+            <Route path="/caseStudy3" component={CaseStudyThree} />
+          </Router>
+        </Container>
 
       </React.Fragment>
     );

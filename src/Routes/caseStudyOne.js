@@ -6,8 +6,8 @@ import second from "../Assets/caseStudies/caseStudy1.2.jpg";
 export default class CaseStudyOne extends Component {
   render() {
     return (
-      <div style={{ backgroundColor: "#8b9dc3" }}>
-        <Container>
+      <div style={{ backgroundColor: "#e1e8f7" }}>
+        <Container style={{fontFamily: 'Roboto Slab'}}>
           <Jumbotron style={{ backgroundColor: "#b3cde0" }}>
             <h1>Affirmative Racial Gerrymandering</h1>
             <p>

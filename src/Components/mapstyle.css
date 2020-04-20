@@ -1,13 +1,26 @@
 .pad {
     padding: 2rem;
+    display: flex; 
+    justify-content: center; 
+    font-style: italic;
 }
 
 .buttonPad {
     padding-left: 3px;
     padding-right: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 .center {
     display: flex; 
     justify-content: center; 
+    padding-bottom: 1rem;
+    
+}
+
+.secondRow {
+    display: flex; 
+    justify-content: center; 
+    padding-bottom: 2rem;
 }

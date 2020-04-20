@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ImageMapper from "react-image-mapper";
 import URL from "../../Assets/Maps/compact_algo.png";
-import "../mapstyle.css";
 
 export default class CompactAlgoMap extends Component {
   clicked(name) {
@@ -38,7 +37,6 @@ export default class CompactAlgoMap extends Component {
   }
 
   render() {
-    // const URL = "../Assets/maps/compact_algo.png";
     const MAP = {
       name: "my-map",
       areas: [

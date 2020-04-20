@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ImageMapper from "react-image-mapper";
 import URL from "../../Assets/Maps/maj_min.png";
-import "../mapstyle.css";
 
 export default class MajMinMap extends Component {
   clicked(name) {

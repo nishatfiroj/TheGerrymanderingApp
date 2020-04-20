@@ -3,8 +3,8 @@ import { Container, Button, Jumbotron, ListGroup } from "react-bootstrap";
 export default class GettingInvolved extends Component {
   render() {
     return (
-      <div style={{ backgroundColor: "#8b9dc3", display: "flex" }}>
-        <Container>
+      <div style={{ backgroundColor: "#e1e8f7", display: "flex" }}>
+        <Container style={{fontFamily: 'Roboto Slab'}}>
           <Jumbotron style={{ backgroundColor: "#b3cde0" }}>
             <h1>Getting Involved</h1>
             <p>
@@ -12,7 +12,7 @@ export default class GettingInvolved extends Component {
               Governor. Another thing you can do is Rally support through
               Atlanta’s local government by contacting the majoy's office or
               constituent services. Redrawing happens following every{" "}
-              <a href="https://www.2020census.gov/" target="_blank">
+              <a href="https://www.2020census.gov/" target="_blank" rel="noopener noreferrer">
                 census
               </a>{" "}
               because population numbers are needed for redistricting, so make
@@ -21,16 +21,20 @@ export default class GettingInvolved extends Component {
             <Button
               href="https://gov.georgia.gov/contact-us"
               className="mb-3"
-              style={{ backgroundColor: "#8b9dc3" }}
+              style={{ backgroundColor: "#6497B1", color: "black", border: "none", outline:"none"}}
             >
               Georgia Governor's Link
             </Button>
             <ListGroup variant="flush">
-              <ListGroup.Item style={{ backgroundColor: "#6497b1" }}>
+              <div style={{ paddingBottom: "2rem", }}></div>
+              <ListGroup.Item style={{ backgroundColor: "#b3cde0" }}>
                 Atlanta's Local Government: 404.330.6100
               </ListGroup.Item>
-              <ListGroup.Item style={{ backgroundColor: "#6497b1" }}>
+              <ListGroup.Item style={{ backgroundColor: "#b3cde0" }}>
                 Constituent Services: 404.330.6023{" "}
+              </ListGroup.Item>
+              <ListGroup.Item style={{ backgroundColor: "#b3cde0" }}>
+                {" "}
               </ListGroup.Item>
             </ListGroup>
           </Jumbotron>
